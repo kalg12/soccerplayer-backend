@@ -3,6 +3,8 @@ const app = express();
 const port = 3000;
 //Vamos a hacer algunas importaciones
 const cors = require("cors");
+//Vamos a importar dotenv
+require("dotenv").config();
 
 //Middlewers
 app.use(cors());
