@@ -5,6 +5,10 @@ const port = 3000;
 const cors = require("cors");
 //Vamos a importar dotenv
 require("dotenv").config();
+const { dbConnection } = require("./src/database/config");
+
+//Vamos a invocar la función de conexion
+dbConnection();
 
 //Middlewers
 app.use(cors());
