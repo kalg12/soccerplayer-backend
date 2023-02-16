@@ -1,17 +1,14 @@
-import mongoose from "mongoose";
-const { Schema, model } = mongoose;
+const { Schema, model } = require("mongoose");
 
-const jugadoresSchema = new Schema({
+const JugadoresSchema = new Schema({
   playerName: {
     type: "string",
-    required: true,
-    unique: true,
+    required: [true, "El nombre del jugador es obligatorio"],
+  },
+  playerPosition: {
+    type: "string",
+    required: [true, "La posición del jugador es obligatoria"],
   },
 });
 
-jugadoresSchema.methods.toJSON = function () {
-  return Jugador;
-};
-
-const Jugador = model("Jugador", jugadoresSchema);
-module.exports = Jugador;
+module.exports = model("Jugador", JugadoresSchema);
