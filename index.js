@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 4000;
 //Vamos a hacer algunas importaciones
 const cors = require("cors");
 //Vamos a importar dotenv
