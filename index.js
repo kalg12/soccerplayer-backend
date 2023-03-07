@@ -7,6 +7,8 @@ const cors = require("cors");
 require("dotenv").config();
 const { dbConnection } = require("./src/database/config");
 
+console.log("Kevin");
+
 //Vamos a invocar la función de conexion
 dbConnection();
 
