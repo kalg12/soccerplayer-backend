@@ -8,7 +8,6 @@ const getPlayers = async (_, res) => {
       ok: true,
       players,
     });
-    console.log(players);
   } catch (error) {
     console.log(error);
   }
